@@ -1,0 +1,80 @@
+.Nav {
+  height: 70px;
+  border-top: 1px solid black;
+  padding: 0;
+  box-shadow: 0 1px 2px rgb(183, 181, 181);
+  overflow: hidden;
+}
+.Nav .logo {
+  width: 20%;
+}
+.Nav .logo img {
+  height: 50px;
+  cursor: pointer;
+}
+.Nav ul {
+  width: 50%;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+}
+.Nav ul li {
+  list-style: none;
+  margin-right: 4rem;
+  cursor: pointer;
+  color: grey;
+  transition: 0.2s all ease;
+}
+.Nav ul li:hover {
+  color: black;
+}
+.Nav .btn {
+  width: 30%;
+  height: 100%;
+}
+.Nav .btn button {
+  width: 8rem;
+  height: 40px;
+  border: 0;
+  outline: 0;
+  margin-right: 1.5rem;
+  border: 3px solid rgb(30, 77, 142);
+  border-radius: 5px;
+  background-color: transparent;
+  transform: scale(0.9);
+  transition: 0.2s all ease;
+}
+.Nav .btn button:hover {
+  transform: scale(1);
+}
+.Nav .btn button:nth-child(2) {
+  background-color: rgb(30, 77, 142);
+  color: white;
+}
+
+.detail {
+  height: 120px;
+}
+
+.grid {
+  width: 95%;
+  height: 46rem;
+  margin: auto;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(4, 24rem);
+  padding: 1rem;
+  grid-gap: 0.2rem;
+  overflow-x: auto;
+  overflow-y: visible;
+  margin-bottom: 2rem;
+}
+.grid::-webkit-scrollbar {
+  display: none;
+}
+.grid {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}/*# sourceMappingURL=component.css.map */

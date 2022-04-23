@@ -1,0 +1,226 @@
+// main card ================================
+.mainCard {
+  width: 23rem;
+  height: 44rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  border-radius: 1.2rem;
+  background-color: rgb(255, 239, 239);
+  box-shadow: 0 0 0.4rem grey;
+  overflow: hidden;
+  transition: 0.2s all ease;
+  transform: scale(0.97);
+
+  &:hover {
+    box-shadow: 1px 1px 1rem grey;
+    transform: scale(1);
+
+    .TopCard {
+      height: 30%;
+    }
+
+    .card-type {
+      width: 33%;
+    }
+
+    .card-details {
+      i {
+        text-shadow: 1px 5px 10px green;
+      }
+    }
+
+    .bulb::first-letter {
+      text-shadow: 1px 1px 10px yellow;
+    }
+  }
+}
+// top Card ==================================
+.TopCard {
+  width: 100%;
+  height: 32%;
+  background-color: rgba(232, 249, 251, 1);
+  padding: 1rem;
+  transition-delay: 0.3s;
+  transition: 0.4s all ease;
+
+  h2 {
+    font-style: italic;
+    font-size: 2rem;
+    margin-bottom: 1.4rem;
+  }
+
+  & .Card-top-box {
+    div:nth-child(1) {
+      width: 70%;
+      height: 50%;
+
+      h4 {
+        font-weight: 300;
+        font-size: 1.5rem;
+      }
+      p {
+        font-weight: 600;
+      }
+      span{
+        color: gray;
+        font-size: 1.2rem;
+        font-weight: 300;
+
+        span{
+          padding: 0 .6rem;
+          position: relative;
+          color: #000;
+          font-weight: 600;
+
+          span{
+            position: absolute;
+            left: 0;
+            bottom: -15px;
+            font-size: .6rem;
+            color: grey;
+          }
+        }
+      }
+    }
+    div:nth-child(2) {
+      width: 30%;
+      padding-top: 30%;
+      border-radius: 50%;
+     
+      position: relative;
+
+      div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 88%;
+        height: 88%;
+        border-radius: 50%;
+        background: rgba(232, 249, 251);
+        transform: translate(-50%, -50%);
+        font-weight: 600;
+        padding-top: 0.8rem;
+        font-size: 1.3rem;
+
+        p {
+          font-weight: 300;
+          font-size: 0.8rem;
+          color: grey;
+        }
+      }
+    }
+  }
+}
+
+// Bottom Card ==================================
+.BottomCard {
+  width: 100%;
+  height: 70%;
+  padding-top: 1rem;
+
+  .card-type {
+    background-color: rgb(30, 77, 142);
+    color: white;
+    font-weight: 700;
+    font-size: 0.8rem;
+    width: 30%;
+    padding: 0.5rem;
+    border-radius: 0 1.2rem 1.2rem 0;
+    transition-delay: 0.3s;
+    transition: 0.4s all ease;
+  }
+
+  .card-details {
+    padding: 0.5rem;
+    padding-right: 0;
+    padding-bottom: 1rem;
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 800;
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      padding-left: 0.5rem;
+      line-height: 1.9rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-transform: capitalize;
+
+      i {
+        color: green;
+        font-size: 1rem;
+        padding-right: 0.4rem;
+        transition-delay: 0.3s;
+        transition: 0.4s all ease;
+      }
+    }
+  }
+
+  .after-detail {
+    p {
+      margin: auto;
+      width: 90%;
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    h5 {
+      margin: auto;
+      margin-top: 0.8rem;
+      width: 90%;
+      font-size: 1rem;
+      text-align: center;
+      color: rgb(30, 77, 142);
+    }
+  }
+
+  .card-most-bottom {
+    div:nth-child(1) {
+      margin: auto;
+      width: 85%;
+
+      div {
+        font-size: 1.8rem;
+        font-weight: 700;
+
+        span {
+          margin-left: 0.5rem;
+          color: red;
+          font-size: 1.5rem;
+          font-weight: 500;
+        }
+      }
+      div:nth-child(2) {
+        text-decoration: line-through;
+        font-size: 1.5rem;
+      }
+    }
+    button {
+      margin: auto;
+      width: 85%;
+      padding: 0.6rem;
+      border: 0;
+      outline: 0;
+      background-color: rgb(30, 77, 142);
+      color: white;
+      margin-top: .5rem;
+      border-radius: 0.5rem;
+      transition: 0.2s all ease;
+
+      &:hover {
+        box-shadow: 0 0 0.2rem black;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+hr{
+  width: 90%;
+  margin: auto;
+}

@@ -1,0 +1,193 @@
+.mainCard {
+  width: 23rem;
+  height: 44rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  border-radius: 1.2rem;
+  background-color: rgb(255, 239, 239);
+  box-shadow: 0 0 0.4rem grey;
+  overflow: hidden;
+  transition: 0.2s all ease;
+  transform: scale(0.97);
+}
+.mainCard:hover {
+  box-shadow: 1px 1px 1rem grey;
+  transform: scale(1);
+}
+.mainCard:hover .TopCard {
+  height: 30%;
+}
+.mainCard:hover .card-type {
+  width: 33%;
+}
+.mainCard:hover .card-details i {
+  text-shadow: 1px 5px 10px green;
+}
+.mainCard:hover .bulb::first-letter {
+  text-shadow: 1px 1px 10px yellow;
+}
+
+.TopCard {
+  width: 100%;
+  height: 32%;
+  background-color: rgb(232, 249, 251);
+  padding: 1rem;
+  transition-delay: 0.3s;
+  transition: 0.4s all ease;
+}
+.TopCard h2 {
+  font-style: italic;
+  font-size: 2rem;
+  margin-bottom: 1.4rem;
+}
+.TopCard .Card-top-box div:nth-child(1) {
+  width: 70%;
+  height: 50%;
+}
+.TopCard .Card-top-box div:nth-child(1) h4 {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.TopCard .Card-top-box div:nth-child(1) p {
+  font-weight: 600;
+}
+.TopCard .Card-top-box div:nth-child(1) span {
+  color: gray;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.TopCard .Card-top-box div:nth-child(1) span span {
+  padding: 0 0.6rem;
+  position: relative;
+  color: #000;
+  font-weight: 600;
+}
+.TopCard .Card-top-box div:nth-child(1) span span span {
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  font-size: 0.6rem;
+  color: grey;
+}
+.TopCard .Card-top-box div:nth-child(2) {
+  width: 30%;
+  padding-top: 30%;
+  border-radius: 50%;
+  position: relative;
+}
+.TopCard .Card-top-box div:nth-child(2) div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 88%;
+  height: 88%;
+  border-radius: 50%;
+  background: rgb(232, 249, 251);
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+  padding-top: 0.8rem;
+  font-size: 1.3rem;
+}
+.TopCard .Card-top-box div:nth-child(2) div p {
+  font-weight: 300;
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.BottomCard {
+  width: 100%;
+  height: 70%;
+  padding-top: 1rem;
+}
+.BottomCard .card-type {
+  background-color: rgb(30, 77, 142);
+  color: white;
+  font-weight: 700;
+  font-size: 0.8rem;
+  width: 30%;
+  padding: 0.5rem;
+  border-radius: 0 1.2rem 1.2rem 0;
+  transition-delay: 0.3s;
+  transition: 0.4s all ease;
+}
+.BottomCard .card-details {
+  padding: 0.5rem;
+  padding-right: 0;
+  padding-bottom: 1rem;
+}
+.BottomCard .card-details h3 {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+.BottomCard .card-details p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-left: 0.5rem;
+  line-height: 1.9rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.BottomCard .card-details p i {
+  color: green;
+  font-size: 1rem;
+  padding-right: 0.4rem;
+  transition-delay: 0.3s;
+  transition: 0.4s all ease;
+}
+.BottomCard .after-detail p {
+  margin: auto;
+  width: 90%;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.BottomCard .after-detail h5 {
+  margin: auto;
+  margin-top: 0.8rem;
+  width: 90%;
+  font-size: 1rem;
+  text-align: center;
+  color: rgb(30, 77, 142);
+}
+.BottomCard .card-most-bottom div:nth-child(1) {
+  margin: auto;
+  width: 85%;
+}
+.BottomCard .card-most-bottom div:nth-child(1) div {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.BottomCard .card-most-bottom div:nth-child(1) div span {
+  margin-left: 0.5rem;
+  color: red;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.BottomCard .card-most-bottom div:nth-child(1) div:nth-child(2) {
+  text-decoration: line-through;
+  font-size: 1.5rem;
+}
+.BottomCard .card-most-bottom button {
+  margin: auto;
+  width: 85%;
+  padding: 0.6rem;
+  border: 0;
+  outline: 0;
+  background-color: rgb(30, 77, 142);
+  color: white;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  transition: 0.2s all ease;
+}
+.BottomCard .card-most-bottom button:hover {
+  box-shadow: 0 0 0.2rem black;
+  transform: scale(1.05);
+}
+
+hr {
+  width: 90%;
+  margin: auto;
+}/*# sourceMappingURL=mainCard.css.map */
