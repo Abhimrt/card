@@ -1,6 +1,6 @@
 .Nav {
   height: 70px;
-  border-top: 1px solid black;
+  margin: 0;
   padding: 0;
   box-shadow: 0 1px 2px rgb(183, 181, 181);
   overflow: hidden;
@@ -20,7 +20,7 @@
 }
 .Nav ul li {
   list-style: none;
-  margin-right: 4rem;
+  margin-right: 3rem;
   cursor: pointer;
   color: grey;
   transition: 0.2s all ease;
@@ -64,7 +64,7 @@
   grid-auto-flow: column;
   grid-template-columns: repeat(4, 24rem);
   padding: 1rem;
-  grid-gap: 0.2rem;
+  grid-gap: 1.5rem;
   overflow-x: auto;
   overflow-y: visible;
   margin-bottom: 2rem;

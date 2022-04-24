@@ -1,10 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
 const TopCard = (props) => {
-  const [hrs, setHrs] = useState(17);
-  const [min, setMin] = useState(49);
-  const [sec, setSec] = useState(49);
-
+  // as per demo I hardcore this portion
   if (props.offert === "Weekly Plan") {
     return (
       <div className="TopCard">
@@ -23,43 +20,36 @@ const TopCard = (props) => {
       </div>
     );
   } else {
-    let bc = "rgba(232, 249, 251)";
-    if (props.offert === "Best Value"){
-      bc = "rgb(126, 250, 143)"
-    } var offer = "Offer ends in";
-    setInterval(() => {
-      if (sec !== 1) setSec(sec - 1);
-      else if (hrs !== 0) {
-        setSec(59);
-        if (min !== 1) setMin(min - 1);
-        else {
-          setMin(59);
-          setHrs(hrs - 1);
-        }
-      }
-    }, 1000);
-    let cir = 100-parseInt(props.session)
+    // else working according to api
+    let bc = "#FAFAFA"; // by default color
+    if (props.offert === "Best Value") {
+      //setting the green color
+      bc = "#DDFED9";
+    }
+    // calculation the booked according the sessions as no info was there in api
+    let cir = 100 - parseInt(props.session);
+    
     return (
-      <div className="TopCard" style={{backgroundColor:bc}}>
+      <div className="TopCard" style={{ backgroundColor: bc }}>
         <h2>FLAT {props.save} OFF</h2>
         <div className="Card-top-box center">
           <div>
-            <h4>{offer}</h4>
+            <h4>Offer ends in</h4>
             <span>
               <span>
-                0 <span>days</span>
+                {props.day} <span>days</span>
               </span>
               |
               <span>
-                {hrs} <span>hrs</span>
+                {props.hrs} <span>hrs</span>
               </span>
               |
               <span>
-                {min} <span>mins</span>
+                {props.min} <span>mins</span>
               </span>
               |
               <span>
-                {sec} <span>secs</span>
+                {props.sec} <span>secs</span>
               </span>
             </span>
           </div>
@@ -68,7 +58,7 @@ const TopCard = (props) => {
               background: `conic-gradient(rgb(30, 77, 142) 0deg , rgb(30, 77, 142) ${cir}%,${bc} ${cir}%)`,
             }}
           >
-            <div className="centerC" style={{background:bc}}>
+            <div className="centerC" style={{ background: bc }}>
               {cir}% <p>Booked</p>
             </div>
           </div>

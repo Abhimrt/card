@@ -1,15 +1,20 @@
 import React from "react";
 
 const BottomCard = (props) => {
-  let style = { backgroundColor: props.offerc, cursor: "pointer" };
+  // settinf default text and style
+  let style = { backgroundColor: "rgb(30, 77, 142)", cursor: "pointer" };
   let text = "Buy Now"
+  // as per demo I hardcore the things
   if (props.offert === "Weekly Plan") {
     style = {
-      backgroundColor: "grey",
+      backgroundColor: "#D2D2D3",
       cursor: "not-allowed",
+      color:"black"
     };
     text = "100% Booked"
   }
+
+
   return (
     <div className="BottomCard" style={{ backgroundColor: props.bc }}>
       <div className="card-type" style={{ backgroundColor: props.offerc }}>
@@ -27,10 +32,10 @@ const BottomCard = (props) => {
         })}
       </div>
       <div className="after-detail">
-        <p className="bulb">{props.suit}</p>
+        <p className="bulb" >{props.suit}</p>
         <h5>Flat {props.save} off for being reffered by Saurabh</h5>
-        <hr />
       </div>
+      <hr />
       <div className="card-most-bottom centerC">
         <div className="center">
           <div>
@@ -43,11 +48,7 @@ const BottomCard = (props) => {
           </div>
           <div>{props.price}</div>
         </div>
-        <button
-          style={style}
-        >
-          {text}
-        </button>
+        <button style={style}>{text}</button>
       </div>
     </div>
   );
