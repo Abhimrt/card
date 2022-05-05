@@ -13,7 +13,7 @@ const MainCard = (props) => {
   let interval;
   const countDown= ()=> {
     interval = setInterval(() => {
-      const till = new Date(2022, 3, 26).getTime();
+      const till = new Date(2023, 3, 26).getTime();
       const now = till - new Date().getTime();
       const days = Math.floor(now / (1000 * 60 * 60 * 24));
       const hours = Math.floor((now % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
