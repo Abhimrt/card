@@ -6,7 +6,7 @@ const Nav = () => {
     <div className="Nav center">
         {/* logo ============ */}
       <div className="logo center">
-        <img src={require("../images/logo.png")} alt="" />
+        <h1>CARD</h1>
       </div>
         {/* links========= */}
       <ul className="center">
